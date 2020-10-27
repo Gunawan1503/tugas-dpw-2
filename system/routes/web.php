@@ -25,8 +25,8 @@ Route::get('/Laptop', function(){
 	return view('laptop');
 });
 
-Route::get('/Komputer', function(){
-	return view('komputer');
+Route::get('/Hp', function(){
+	return view('hp');
 });
 
 Route::get('/Handphone', function(){
@@ -35,4 +35,16 @@ Route::get('/Handphone', function(){
 
 Route::get('/Login', function(){
 	return view('login');
+});
+
+Route::get('/Ipad', function(){
+	return view('ipad');
+});
+
+Route::get('/Kamera', function(){
+	return view('kamera');
+});
+
+Route::get('/Realme', function(){
+	return view('realme');
 });
