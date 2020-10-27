@@ -6,9 +6,60 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d0ee1fa2b0.js" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+    <title>Form Login</title>
+    <style>
+    	h1 {
+	text-align: center;
+	font-weight: 300;
+	}
+	 
+	.tulisan_login {
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	 
+	.kotak_login {
+		width: 400px;
+		background: rgba(0,0,0,0.6);
+		margin: 80px auto;
+		padding: 30px 20px;
+	}
+	 
+	.text-title {
+		font-size: 12pt;
+		color: #fff;
+	}
+	 
+	.form_login{
+		box-sizing : border-box;
+		width: 100%;
+		padding: 10px;
+		font-size: 12pt;
+		margin-bottom: 20px;
+	}
+
+	.btn {
+		width: 100%;
+	}
+    </style>
+ </head>
+ <body style="background: url(system/vendor/assets/bg.jpg); background-size: cover;">
+  	<div class="kotak_login">
+		<p class="tulisan_login">Silahkan login</p>
+	 
+		<form>
+			<label class="text-title">Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+	 
+			<label class="text-title">Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Password ..">
+	 
+			<input type="submit" class="btn btn-outline-warning" value="LOGIN">
+			<br><br>
+			<a class="btn btn-outline-light" href="{{ url('/Home') }}">kembali</a>
+		</form>	
+	</div>
   	
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
