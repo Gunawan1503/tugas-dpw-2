@@ -57,7 +57,7 @@
 	 
 			<input type="submit" class="btn btn-outline-warning" value="LOGIN">
 			<br><br>
-			<a class="btn btn-outline-light" href="{{ url('/Home') }}">kembali</a>
+			<p  style="color: #fff;">Don't have an account? <a class="link" href="{{ url('Register') }}">Sign Up</a></p>
 		</form>	
 	</div>
   	

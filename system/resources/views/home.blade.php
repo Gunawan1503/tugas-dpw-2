@@ -16,8 +16,8 @@
 		  	<div class="collapse navbar-collapse text-muted ml-5" id="navbarSupportedContent">
 		    	<h3 class="ml-5"><i class="fas fa-phone-alt ml-5 mr-3"></i>Call Us: +6281231231234</h3>
 		    	<div class="icon ml-5">
-		    		<a href="{{ url('/Login') }}" class="btn btn-white my-2 ml-5 mr-3"><i class="fas fa-lock ml-5 mr-2"></i>Login</a>
-		    		<a href="#" class="btn btn-white"><i class="fas fa-user mr-2"></i>Register</a>
+		    		<a href="{{ url('Login') }}" class="btn btn-white my-2 ml-5 mr-3"><i class="fas fa-lock ml-5 mr-2"></i>Login</a>
+		    		<a href="{{ url('Register') }}" class="btn btn-white"><i class="fas fa-user mr-2"></i>Register</a>
 		    		<a href="#" class="btn btn-info ml-5"><i class="fas fa-shopping-cart mr-2"></i>SHOPPING CART</a>
 		    	</div>
 		  	</div>
