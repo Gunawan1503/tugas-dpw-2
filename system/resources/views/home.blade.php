@@ -62,7 +62,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-11.jpg" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-11.jpg" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 11 Max Pro</h4>
@@ -73,7 +73,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-6s.png" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-6s.png" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 6S</h4>
@@ -84,7 +84,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-7.jfif" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-7.jfif" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 7</h4>
@@ -112,13 +112,13 @@
 			  	</ol>
 			  	<div class="carousel-inner">
 			    	<div class="carousel-item active">
-			      		<img style="height: 600px;"src="system/vendor/assets/slide-show/laptop.jpg" class="d-block w-100" alt="...">
+			      		<img style="height: 600px;"src="system/resources/assets/slide-show/laptop.jpg" class="d-block w-100" alt="...">
 			    	</div>
 			    	<div class="carousel-item">
-			      		<img style="height: 600px" src="system/vendor/assets/slide-show/komputer.jpg" class="d-block w-100" alt="...">
+			      		<img style="height: 600px" src="system/resources/assets/slide-show/komputer.jpg" class="d-block w-100" alt="...">
 			    	</div>
 			    	<div class="carousel-item">
-			      		<img style="height: 600px" src="system/vendor/assets/slide-show/handphone.jpg" class="d-block w-100" alt="...">
+			      		<img style="height: 600px" src="system/resources/assets/slide-show/handphone.jpg" class="d-block w-100" alt="...">
 			    	</div>
 			  	</div>
 			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -133,7 +133,7 @@
 			<h3 class="text-center text-weight-bold m-4">Rekomendasi</h3>
 			<div class="row mx-auto mb-3">
 				<div class="card ml-3 mr-4" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/acer.jpg" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/acer.jpg" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Laptop Acer Predator</h5>
 				    	<p class="card-text">Prosesor Core-i7 </p>
@@ -147,7 +147,7 @@
 				  	</div>
 				</div>
 				<div class="card ml-4 mr-4" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/hp-core15.jfif" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/hp-core15.jfif" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Laptop Hp </h5>
 				    	<p class="card-text">Prosesor Core i5</p>
@@ -161,7 +161,7 @@
 				  	</div>
 				</div>
 				<div class="card ml-4 mr-3" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/iphone.jpg" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/iphone.jpg" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Iphone 8+</h5>
 				    	<p class="card-text">Prosesor Snapdragon 845</p>
@@ -177,7 +177,7 @@
 			</div>
 			<div class="row mx-auto">
 				<div class="card ml-3 mr-4" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/ipad-11pro.jpg" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/ipad-11pro.jpg" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Ipad 12 Pro</h5>
 				    	<p class="card-text">Prosesor Snapdragon 865 </p>
@@ -191,7 +191,7 @@
 				  	</div>
 				</div>
 				<div class="card ml-4 mr-4" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/nikon-d5100.jfif" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/nikon-d5100.jfif" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Kamera Nikon D5100</h5>
 				    	<p class="card-text">Kamera Yang Membuat Kulit Hitam Menjadi Putih</p>
@@ -205,7 +205,7 @@
 				  	</div>
 				</div>
 				<div class="card ml-4 mr-3" style="width: 18rem;">
-				  	<img style="height: 200px" src="system/vendor/assets/rekomendasi/realme-8pro.jpg" class="card-img-top" alt="...">
+				  	<img style="height: 200px" src="system/resources/assets/rekomendasi/realme-8pro.jpg" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    	<h5 class="card-title">Realme 8 Pro</h5>
 				    	<p class="card-text">Prosesor Snapdragon 845</p>

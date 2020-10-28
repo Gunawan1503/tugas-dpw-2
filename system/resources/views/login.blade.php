@@ -44,7 +44,7 @@
 	}
     </style>
  </head>
- <body style="background: url(system/vendor/assets/bg.jpg); background-size: cover;">
+ <body style="background: url(system/resources/assets/bg.jpg); background-size: cover;">
   	<div class="kotak_login">
 		<p class="tulisan_login">Silahkan login</p>
 	 

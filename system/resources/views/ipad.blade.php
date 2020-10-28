@@ -63,7 +63,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-11.jpg" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-11.jpg" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 11 Max Pro</h4>
@@ -74,7 +74,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-6s.png" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-6s.png" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 6S</h4>
@@ -85,7 +85,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-7.jfif" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-7.jfif" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 7</h4>
@@ -107,7 +107,7 @@
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-sm-5">
-					<img style="width: 400px;" src="system/vendor/assets/rekomendasi/ipad-11pro.jpg" alt="">
+					<img style="width: 400px;" src="system/resources/assets/rekomendasi/ipad-11pro.jpg" alt="">
 				</div>
 				<div class="col-sm-7 mt-2">
 					<h3>Ipad 12 Pro</h3>

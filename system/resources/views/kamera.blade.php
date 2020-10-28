@@ -63,7 +63,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-11.jpg" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-11.jpg" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 11 Max Pro</h4>
@@ -74,7 +74,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-6s.png" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-6s.png" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 6S</h4>
@@ -85,7 +85,7 @@
 			  	<li class="list-group-item">
 			  		<div class="row">
 			  			<div class="col-sm-3">
-				  			<img style="width:70px;" src="system/vendor/assets/best-selling/iphone-7.jfif" alt="...">
+				  			<img style="width:70px;" src="system/resources/assets/best-selling/iphone-7.jfif" alt="...">
 				  		</div>
 				  		<div class="col-sm-9">
 				  			<h4>Iphone 7</h4>
@@ -107,7 +107,7 @@
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-sm-5 mt-2">
-					<img style="width: 410px;" src="system/vendor/assets/rekomendasi/nikon-d5100.jfif" alt="">
+					<img style="width: 410px;" src="system/resources/assets/rekomendasi/nikon-d5100.jfif" alt="">
 				</div>
 				<div class="col-sm-7 mt-2">
 					<h3>Kamera Nikon D5100</h3>
