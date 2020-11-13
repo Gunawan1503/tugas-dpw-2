@@ -1,4 +1,4 @@
-@extends('template.base')
+@extends('templateAdmin.base')
 
 @section('content')
 	<h3>Ini Halaman Dashboard</h3>

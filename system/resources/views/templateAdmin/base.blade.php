@@ -43,14 +43,14 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        @include('template.section.header');
+        @include('templateAdmin.section.header');
         <!-- ============================================================== -->
         <!-- End Topbar header -->
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        @include('template.section.sidebar');
+        @include('templateAdmin.section.sidebar');
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -62,6 +62,11 @@
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-md-12">
+                        @include('templateAdmin.utils.notif')
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-7 align-self-center">
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Nice To Meet You, Gunawan</h3>
@@ -91,7 +96,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            @include('template.section.footer');
+            @include('templateAdmin.section.footer');
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->

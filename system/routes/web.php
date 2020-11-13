@@ -1,13 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProdukController;
+
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
+| Here is where you can register web routes for your application.  These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
@@ -17,58 +21,30 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Home', function(){
-	return view('home');
-});
+// HALAMAN STORE
+Route::get('/Home', [HomeController::class, 'showHome']);
+Route::get('/Laptop', [HomeController::class, 'showLaptop']);
+Route::get('/Hp', [HomeController::class, 'showHp']);
+Route::get('/Handphone', [HomeController::class, 'showHandphone']);
+Route::get('/Ipad', [HomeController::class, 'showIpad']);
+Route::get('/Kamera', [HomeController::class, 'showKamera']);
+Route::get('/Realme', [HomeController::class, 'showRealme']);
 
-Route::get('/Laptop', function(){
-	return view('laptop');
-});
+// HALAMAN ADMIN
+Route::get('Dashboard', [HomeController::class, 'showDashboard']);
+Route::get('Kategori', [HomeController::class, 'showKategori']);
+Route::get('Promo', [HomeController::class, 'showPromo']);
 
-Route::get('/Hp', function(){
-	return view('hp');
-});
+// HALAMAN LOGIN DAN REGISTER
+Route::get('Login', [AuthController::class, 'showLogin']);
+Route::get('Register', [AuthController::class, 'registration']);
 
-Route::get('/Handphone', function(){
-	return view('handphone');
-});
+Route::get('Produk', [ProdukController::class, 'index']);
+Route::get('Produk/Create', [ProdukController::class, 'create']);
+Route::post('Produk', [ProdukController::class, 'store']);
+Route::get('Produk/{produk}', [ProdukController::class, 'show']);
+Route::get('Produk/{produk}/edit', [ProdukController::class, 'edit']);
+Route::put('Produk/{produk}', [ProdukController::class, 'update']);
+Route::delete('Produk/{produk}', [ProdukController::class, 'destroy']);
 
-Route::get('/Ipad', function(){
-	return view('ipad');
-});
 
-Route::get('/Kamera', function(){
-	return view('kamera');
-});
-
-Route::get('/Realme', function(){
-	return view('realme');
-});
-
-Route::get('Template', function(){
-	return view('template.base');
-});
-
-Route::get('Dashboard', function(){
-	return view('dashboard');
-});
-
-Route::get('Produk', function(){
-	return view('produk');
-});
-
-Route::get('Kategori', function(){
-	return view('kategori');
-});
-
-Route::get('Promo', function(){
-	return view('promo');
-});
-
-Route::get('Login', function(){
-	return view('login');
-});
-
-Route::get('Register', function(){
-	return view('register');
-});
