@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d0ee1fa2b0.js" crossorigin="anonymous"></script>
 
-    <title>Form Login</title>
+    <title>Form Register</title>
     <style>
     	h1 {
 	text-align: center;
 	font-weight: 300;
 	}
 	 
-	.tulisan_login {
+	.tulisan_register {
 		color: #fff;
 		text-align: center;
 		text-transform: uppercase;
 	}
 	 
-	.kotak_login {
+	.kotak_register {
 		width: 400px;
 		background: rgba(0,0,0,0.6);
 		margin: 40px auto;
@@ -31,7 +31,7 @@
 		color: #fff;
 	}
 	 
-	.form_login{
+	.form_register{
 		box-sizing : border-box;
 		width: 100%;
 		padding: 10px;
@@ -45,23 +45,24 @@
     </style>
  </head>
  <body style="background: url(system/resources/assets/bg.jpg); background-size: cover;">
-  	<div class="kotak_login">
-		<p class="tulisan_login">Silahkan login</p>
+  	<div class="kotak_register">
+		<p class="tulisan_register">Silahkan Daftar</p>
 	 
-		<form>
+		<form action="{{url('Register')}}" method="post">
+			@csrf
+			<label class="text-title">Nama Lengkap</label>
+			<input type="text" name="nama" class="form_register" placeholder="Masukkan Nama Lengkap...">
+
 			<label class="text-title">Username</label>
-			<input type="text" name="username" class="form_login" placeholder="Masukkan Username...">
+			<input type="text" name="username" class="form_register" placeholder="Masukkan Username...">
 	 
 			<label class="text-title">Email</label>
-			<input type="email" name="email" class="form_login" placeholder="Masukkan Email anda...">
+			<input type="email" name="email" class="form_register" placeholder="Masukkan Email anda...">
 
 			<label class="text-title">Password</label>
-			<input type="text" name="password" class="form_login" placeholder="Password...">
+			<input type="password" name="password" class="form_register" placeholder="Password...">
 
-			<label class="text-title">Ulangi Password</label>
-			<input type="text" name="password" class="form_login" placeholder="Password...">			
-	 
-			<input type="submit" class="btn btn-outline-warning" value="LOGIN">
+			<input type="submit" class="btn btn-outline-warning" value="REGISTER">
 			<br><br>
 			<p style="color: #fff;">Already have an account? <a class="link" href="{{ url('Login') }}">Sign In</a></p>
 		</form>	

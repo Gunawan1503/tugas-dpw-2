@@ -51,7 +51,7 @@
 		<form action="{{url('Login')}}" method="post">
 			@csrf
 			<label class="text-title">Email</label>
-			<input type="text" name="email" class="form_login" placeholder="Email ..">
+			<input type="email" name="email" class="form_login" placeholder="Email ..">
 	 
 			<label class="text-title">Password</label>
 			<input type="password" name="password" class="form_login" placeholder="Password ..">

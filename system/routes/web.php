@@ -22,7 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// HALAMAN STORE
 Route::get('/Home', [HomeController::class, 'showHome']);
 Route::get('/Laptop', [HomeController::class, 'showLaptop']);
 Route::get('/Hp', [HomeController::class, 'showHp']);
@@ -31,12 +30,8 @@ Route::get('/Ipad', [HomeController::class, 'showIpad']);
 Route::get('/Kamera', [HomeController::class, 'showKamera']);
 Route::get('/Realme', [HomeController::class, 'showRealme']);
 
-// HALAMAN ADMIN
 Route::get('Dashboard', [HomeController::class, 'showDashboard']);
 Route::get('Kategori', [HomeController::class, 'showKategori']);
-
-// HALAMAN LOGIN DAN REGISTER
-Route::get('Register', [AuthController::class, 'registration']);
 
 Route::get('Produk', [ProdukController::class, 'index']);
 Route::get('Produk/Create', [ProdukController::class, 'create']);
@@ -58,3 +53,5 @@ Route::get('Login', [AuthController::class, 'showLogin']);
 Route::post('Login', [AuthController::class, 'loginProcess']);
 Route::get('Logout', [AuthController::class, 'logout']);
 
+Route::get('Register', [AuthController::class, 'showRegister']);
+Route::post('Register', [AuthController::class, 'registerProcess']);

@@ -73,7 +73,7 @@
                             @if(Auth::check())
                                 {{request()->user()->nama}}
                             @else
-                                Silahkan Login 
+                                Silahkan Login
                             @endif
                         </h3>
                         <div class="d-flex align-items-center">
