@@ -47,13 +47,14 @@
  <body style="background: url(system/resources/assets/bg.jpg); background-size: cover;">
   	<div class="kotak_login">
 		<p class="tulisan_login">Silahkan login</p>
-	 
-		<form>
-			<label class="text-title">Username</label>
-			<input type="text" name="username" class="form_login" placeholder="Username atau email ..">
+	 	@include('templateAdmin.utils.notif')
+		<form action="{{url('Login')}}" method="post">
+			@csrf
+			<label class="text-title">Email</label>
+			<input type="text" name="email" class="form_login" placeholder="Email ..">
 	 
 			<label class="text-title">Password</label>
-			<input type="text" name="password" class="form_login" placeholder="Password ..">
+			<input type="password" name="password" class="form_login" placeholder="Password ..">
 	 
 			<input type="submit" class="btn btn-outline-warning" value="LOGIN">
 			<br><br>

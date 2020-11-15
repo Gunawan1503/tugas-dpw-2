@@ -24,9 +24,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item active">
-                            <a class="sidebar-link sidebar-link" href="{{url('Promo')}}">
+                            <a class="sidebar-link sidebar-link" href="{{url('User')}}">
                                 <i class="feather-icon fas fa-th"></i>
-                                <span class="hide-menu">Promo</span>
+                                <span class="hide-menu">User</span>
                             </a>
                         </li>
                         <li class="sidebar-item">

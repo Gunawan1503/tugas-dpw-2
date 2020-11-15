@@ -66,10 +66,16 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="{{url('public')}}/assets/images/users/profile-iwan.jpeg" alt="user" class="rounded-circle"
+                                <img src="{{ url('public') }}/assets/images/favicon.png" alt="user" class="rounded-circle"
                                     width="40" height="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Gunawan</span> <i data-feather="chevron-down"
+                                        class="text-dark">
+                                            @if(Auth::check())
+                                                {{request()->user()->nama}}
+                                            @else
+                                                Silahkan Login 
+                                            @endif
+                                        </span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -82,7 +88,7 @@
                                     Setting
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{url('Login')}}">
+                                <a class="dropdown-item" href="{{url('Logout')}}">
                                     <i data-feather="power" class="svg-icon mr-2 ml-1"></i>
                                     Logout
                                 </a>
