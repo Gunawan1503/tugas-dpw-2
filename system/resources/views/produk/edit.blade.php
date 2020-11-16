@@ -9,7 +9,7 @@
 						Edit Data Produk
 					</div>
 					<div class="card-body text-dark">
-						<form action="{{url('Produk', $produk->id)}}" method="post">
+						<form action="{{url('Admin/Produk', $produk->id)}}" method="post">
 							@csrf
 							@method('PUT')
 							<div class="form-group">

@@ -31,25 +31,30 @@ Route::get('/Kamera', [HomeController::class, 'showKamera']);
 Route::get('/Realme', [HomeController::class, 'showRealme']);
 
 Route::get('Dashboard', [HomeController::class, 'showDashboard']);
-Route::get('Kategori', [HomeController::class, 'showKategori']);
 
-Route::get('Produk', [ProdukController::class, 'index']);
-Route::get('Produk/Create', [ProdukController::class, 'create']);
-Route::post('Produk', [ProdukController::class, 'store']);
-Route::get('Produk/{produk}', [ProdukController::class, 'show']);
-Route::get('Produk/{produk}/edit', [ProdukController::class, 'edit']);
-Route::put('Produk/{produk}', [ProdukController::class, 'update']);
-Route::delete('Produk/{produk}', [ProdukController::class, 'destroy']);
 
-Route::get('User', [UserController::class, 'index']);
-Route::get('User/Create', [UserController::class, 'create']);
-Route::post('User', [UserController::class, 'store']);
-Route::get('User/{user}', [UserController::class, 'show']);
-Route::get('User/{user}/edit', [UserController::class, 'edit']);
-Route::put('User/{user}', [UserController::class, 'update']);
-Route::delete('User/{user}', [UserController::class, 'destroy']);
+Route::prefix('Admin')->middleware('auth')->group(function(){
+	Route::get('Kategori', [HomeController::class, 'showKategori']);
+	
+	Route::get('Produk', [ProdukController::class, 'index']);
+	Route::get('Produk/Create', [ProdukController::class, 'create']);
+	Route::post('Produk', [ProdukController::class, 'store']);
+	Route::get('Produk/{produk}', [ProdukController::class, 'show']);
+	Route::get('Produk/{produk}/edit', [ProdukController::class, 'edit']);
+	Route::put('Produk/{produk}', [ProdukController::class, 'update']);
+	Route::delete('Produk/{produk}', [ProdukController::class, 'destroy']);
 
-Route::get('Login', [AuthController::class, 'showLogin']);
+	Route::get('User', [UserController::class, 'index']);
+	Route::get('User/Create', [UserController::class, 'create']);
+	Route::post('User', [UserController::class, 'store']);
+	Route::get('User/{user}', [UserController::class, 'show']);
+	Route::get('User/{user}/edit', [UserController::class, 'edit']);
+	Route::put('User/{user}', [UserController::class, 'update']);
+	Route::delete('User/{user}', [UserController::class, 'destroy']);
+});
+
+
+Route::get('Login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('Login', [AuthController::class, 'loginProcess']);
 Route::get('Logout', [AuthController::class, 'logout']);
 

@@ -9,7 +9,7 @@
 						Tambah Data User
 					</div>
 					<div class="card-body text-dark">
-						<form action="{{url('User')}}" method="post">
+						<form action="{{url('Admin/User')}}" method="post">
 							@csrf
 							<div class="form-group">
 								<label for="" class="control-label">Nama</label>

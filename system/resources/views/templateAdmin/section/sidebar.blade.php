@@ -12,19 +12,19 @@
                         </li>
                         <li class="list-divider"></li>
                         <li class="sidebar-item active">
-                            <a class="sidebar-link sidebar-link" href="{{url('Produk')}}">
+                            <a class="sidebar-link sidebar-link" href="{{url('Admin/Produk')}}">
                                 <i class="feather-icon fas fa-th"></i>
                                 <span class="hide-menu">Produk</span>
                             </a>
                         </li>
                         <li class="sidebar-item active">
-                            <a class="sidebar-link sidebar-link" href="{{url('Kategori')}}">
+                            <a class="sidebar-link sidebar-link" href="{{url('Admin/Kategori')}}">
                                 <i class="feather-icon fas fa-th"></i>
                                 <span class="hide-menu">Kategori</span>
                             </a>
                         </li>
                         <li class="sidebar-item active">
-                            <a class="sidebar-link sidebar-link" href="{{url('User')}}">
+                            <a class="sidebar-link sidebar-link" href="{{url('Admin/User')}}">
                                 <i class="feather-icon fas fa-th"></i>
                                 <span class="hide-menu">User</span>
                             </a>
