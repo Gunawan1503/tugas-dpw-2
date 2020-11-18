@@ -5,7 +5,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="sidebar-item active">
-                            <a class="sidebar-link" href="{{url('/Dashboard')}}">
+                            <a class="sidebar-link" href="{{url('Admin/Dashboard')}}">
                                 <i class="feather-icon fas fa-home"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>

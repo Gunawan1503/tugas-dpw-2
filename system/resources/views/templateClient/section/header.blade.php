@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-		  	<a class="navbar-brand font-weight-bold text-muted" href="{{ url('home') }}">WWW.WSSHOP.COM</a>
+		  	<a class="navbar-brand font-weight-bold text-muted" href="{{ url('Home') }}">WWW.WSSHOP.COM</a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
@@ -17,7 +17,7 @@
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    	<ul class="navbar-nav mr-auto">
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="{{ url('home') }}"><i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
+		        		<a class="nav-link" href="{{ url('Home') }}"><i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="#">Services <span class="sr-only">(current)</span></a>
@@ -29,7 +29,7 @@
 		        		<a class="nav-link" href="#">Reviews <span class="sr-only">(current)</span></a>
 		      		</li>
 		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">New Product <span class="sr-only">(current)</span></a>
+		        		<a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
 		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="#">Specials <span class="sr-only">(current)</span></a>

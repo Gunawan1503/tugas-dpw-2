@@ -22,18 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Home', [HomeController::class, 'showHome']);
-Route::get('/Laptop', [HomeController::class, 'showLaptop']);
-Route::get('/Hp', [HomeController::class, 'showHp']);
-Route::get('/Handphone', [HomeController::class, 'showHandphone']);
-Route::get('/Ipad', [HomeController::class, 'showIpad']);
-Route::get('/Kamera', [HomeController::class, 'showKamera']);
-Route::get('/Realme', [HomeController::class, 'showRealme']);
+Route::get('Home', [HomeController::class, 'index']);
 
-Route::get('Dashboard', [HomeController::class, 'showDashboard']);
 
 
 Route::prefix('Admin')->middleware('auth')->group(function(){
+	Route::get('Dashboard', [HomeController::class, 'showDashboard']);
 	Route::get('Kategori', [HomeController::class, 'showKategori']);
 	
 	Route::get('Produk', [ProdukController::class, 'index']);
