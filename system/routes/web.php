@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('Home', [HomeController::class, 'index']);
-
+Route::post('Produk/Filter', [HomeController::class, 'filter']);
 
 
 Route::prefix('Admin')->middleware('auth')->group(function(){
@@ -37,6 +37,7 @@ Route::prefix('Admin')->middleware('auth')->group(function(){
 	Route::get('Produk/{produk}/edit', [ProdukController::class, 'edit']);
 	Route::put('Produk/{produk}', [ProdukController::class, 'update']);
 	Route::delete('Produk/{produk}', [ProdukController::class, 'destroy']);
+	Route::post('Produk/Filter', [ProdukController::class, 'filter']);
 
 	Route::get('User', [UserController::class, 'index']);
 	Route::get('User/Create', [UserController::class, 'create']);

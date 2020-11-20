@@ -9,10 +9,10 @@
 						Daftar Produk
 					</div>
 					<div class="card-body">
-						<table class="table">
+						<table class="table table-datatable">
 							<thead class="thead-dark">
 								<th>No.</th>
-								<th width="450px">Nama</th>
+								<th width="150px">Nama</th>
 								<th>Berat</th>
 								<th>Harga</th>
 								<th>Stok</th>
@@ -23,8 +23,8 @@
 								<tr>
 									<td>{{$loop->iteration}}</td>
 									<td>{{$produk->nama}}</td>
-									<td>{{$produk->berat}}</td>
-									<td>{{$produk->harga}}</td>
+									<td>{{$produk->berat}} gr</td>
+									<td>Rp. {{number_format($produk->harga)}}</td>
 									<td>{{$produk->stok}}</td>
 									<td>{{$produk->deskripsi}}</td>
 								</tr>

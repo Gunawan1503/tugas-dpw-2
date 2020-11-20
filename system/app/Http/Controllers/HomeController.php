@@ -25,4 +25,32 @@ class HomeController extends Controller{
 	function showDashboard(){
 		return view('dashboard');
 	}
+
+	function showKategori(){
+		return view('kategori');
+	}
+
+	function filter(){
+		$nama = request('nama');
+		$stok = explode(",", request('stok'));
+		$data['harga_max'] = $harga_max = request('harga_max');
+		$data['harga_min'] = $harga_min = request('harga_min');
+		$data['list_produk'] = Produk::where('nama', 'like', "%$nama%")->get();
+		// $data['list_produk'] = Produk::whereIn('stok', $stok)->get();
+		// $data['list_produk'] = Produk::whereBetween('harga', [$harga_min, $harga_max])->get();
+		// $data['list_produk'] = Produk::where('stok', '<>', $stok)->get();
+		// $data['list_produk'] = Produk::whereNotIn('stok', $stok)->get();
+		// $data['list_produk'] = Produk::whereNotBetween('harga', [$harga_min, $harga_max])->get();
+		// $data['list_produk'] = Produk::whereNull('stok')->get();
+		// $data['list_produk'] = Produk::whereNotNull('stok')->get();
+		// $data['list_produk'] = Produk::whereDate('created_at', '2020-11-14')->get();
+		// $data['list_produk'] = Produk::whereYear('created_at', '2020')->get();
+		// $data['list_produk'] = Produk::whereMonth('created_at', '11')->get();
+		// $data['list_produk'] = Produk::whereTime('created_at', '17:49:30')->get();		
+		$data['nama'] = $nama;
+		$data['stok'] = request('stok');
+
+
+		return view('home', $data);
+	}
 }
