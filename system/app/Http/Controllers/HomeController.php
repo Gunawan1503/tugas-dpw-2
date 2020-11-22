@@ -53,4 +53,9 @@ class HomeController extends Controller{
 
 		return view('home', $data);
 	}
+
+	function show(Produk $produk){
+		$data['produk'] = $produk;
+		return view('show', $data);
+	}
 }

@@ -23,8 +23,8 @@ Route::get('/', function () {
 });
 
 Route::get('Home', [HomeController::class, 'index']);
+Route::get('Client/Produk/{produk}', [HomeController::class, 'show']);
 Route::post('Produk/Filter', [HomeController::class, 'filter']);
-
 
 Route::prefix('Admin')->middleware('auth')->group(function(){
 	Route::get('Dashboard', [HomeController::class, 'showDashboard']);

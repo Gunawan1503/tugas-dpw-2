@@ -12,21 +12,23 @@
 						<table class="table table-datatable">
 							<thead class="thead-dark">
 								<th>No.</th>
-								<th width="150px">Nama</th>
-								<th>Berat</th>
-								<th>Harga</th>
+								<th>Aksi</th>
+								<th>Nama</th>
+								<th width="90x">Berat</th>
+								<th width="110px">Harga</th>
 								<th>Stok</th>
-								<th>Deskripsi</th>
 							</thead>
 							<tbody class="text-dark">
 								@foreach($list_produk as $produk)
 								<tr>
 									<td>{{$loop->iteration}}</td>
+									<td>
+										<a href="{{url('Client/Produk', $produk->id)}}" class="btn btn-dark"><i class="fa fa-info"></i></a>
+									</td>
 									<td>{{$produk->nama}}</td>
 									<td>{{$produk->berat}} gr</td>
 									<td>Rp. {{number_format($produk->harga)}}</td>
 									<td>{{$produk->stok}}</td>
-									<td>{{$produk->deskripsi}}</td>
 								</tr>
 								@endforeach
 							</tbody>
