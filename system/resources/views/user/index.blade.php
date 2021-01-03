@@ -17,7 +17,7 @@
 								<th>Aksi</th>
 								<th width="300px">Username</th>
 								<th>Nama</th>
-								<th>Produk</th>
+								<th>Jenis Kelamin</th>
 								<th width="200px">Email</th>
 							</thead>
 							<tbody class="text-dark">
@@ -33,7 +33,7 @@
 									</td>
 									<td>{{$user->username}}</td>
 									<td>{{$user->nama}}</td>
-									<td>{{$user->produk_count}}</td>
+									<td>{{$user->jenis_kelamin_string}}</td>
 									<td>{{$user->email}}</td>
 								</tr>
 								@endforeach
