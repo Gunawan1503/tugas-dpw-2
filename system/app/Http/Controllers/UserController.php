@@ -18,7 +18,8 @@ class UserController extends Controller{
 		$user->nama = request('nama');
 		$user->username = request('username');
 		$user->email = request('email');
-		$user->password = bcrypt(request('password'));
+		$user->jenis_kelamin = request('jk');
+		$user->password = request('password');
 		$user->save();
 
 		$userDetail = new UserDetail;

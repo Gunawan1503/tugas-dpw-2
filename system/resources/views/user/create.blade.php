@@ -16,6 +16,15 @@
 								<input type="text" class="form-control" name="nama">
 							</div>
 							<div class="form-group">
+								<label for="" class="control-label">Jenis Kelamin</label>
+								<input type="text" class="form-control" name="jk">
+							</div>
+							<div style="color: red;" class="note">
+								<h3>Note :</h3>
+								<p>1 = Laki-laki</p>
+								<p>2 = Perempuan</p>
+							</div>
+							<div class="form-group">
 								<label for="" class="control-label">Username</label>
 								<input type="text" class="form-control" name="username">
 							</div>
