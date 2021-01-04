@@ -26,8 +26,8 @@
 										<a href="{{url('Client/Produk', $produk->id)}}" class="btn btn-dark"><i class="fa fa-info"></i></a>
 									</td>
 									<td>{{$produk->nama}}</td>
-									<td>{{$produk->berat}} gr</td>
-									<td>Rp. {{number_format($produk->harga)}}</td>
+									<td>{{$produk->berat}} Kg</td>
+									<td>{{$produk->harga}}</td>
 									<td>{{$produk->stok}}</td>
 								</tr>
 								@endforeach

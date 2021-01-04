@@ -12,9 +12,9 @@
 						<h3>{{$produk->nama}}</h3>
 						<hr>
 						<p>
-							Rp. {{number_format($produk->harga)}}  |
+							{{$produk->harga}}  |
 							Stok : {{$produk->stok}} Unit  |
-							Berat : {{$produk->berat}} gr  |
+							Berat : {{$produk->berat}} Kg  |
 							Seller : {{$produk->seller->username}}
 						</p>
 						<p>
