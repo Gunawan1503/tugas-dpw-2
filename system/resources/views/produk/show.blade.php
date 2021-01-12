@@ -11,16 +11,18 @@
 					<div class="card-body text-dark">
 						<h3>{{$produk->nama}}</h3>
 						<hr>
-						<p>
-							{{$produk->harga}}  |
-							Stok : {{$produk->stok}} Unit  |
-							Berat : {{$produk->berat}} Kg  |
-							Seller : {{$produk->seller->username}} |
-							Diproduksi Sejak : {{$produk->created_at->diffForHumans()}}
-						</p>
+						@include('produk.show.detail')
 						<p>
 							{!! nl2br($produk->deskripsi) !!}
 						</p>
+						<br>
+						<br>
+						<div class="row">
+							<div class="col-7">
+								<img src="{{url("public",$produk->foto)}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-5"></div>
+						</div>
 					</div>
 				</div>
 			</div>

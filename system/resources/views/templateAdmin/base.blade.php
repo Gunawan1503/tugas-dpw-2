@@ -20,6 +20,7 @@
 
     <link href="{{ url('public') }}/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
 
+    @stack('style')
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -143,6 +144,8 @@
     <script src="{{url('public')}}/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="{{url('public')}}/dist/js/pages/datatable/datatable-basic.init.js"></script>
 
+    @stack('script')
+    
     <script>
         $(".table-datatable").DataTable();
     </script>
