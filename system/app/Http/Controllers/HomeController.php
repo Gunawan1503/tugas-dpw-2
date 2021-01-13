@@ -7,7 +7,7 @@ use App\Models\Produk;
 class HomeController extends Controller{
 
 	function index(){
-		$data['list_produk'] = Produk::all();
+		$data['list_produk'] = Produk::paginate(6);
 		return view('home', $data);
 	}
 	

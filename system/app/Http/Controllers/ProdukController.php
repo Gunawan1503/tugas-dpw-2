@@ -44,6 +44,7 @@ class ProdukController extends Controller{
 		$produk->save();
 
 		$produk->handleEdit();
+
 		return redirect('Admin/Produk')->with('warning', 'Data Berhasil Diedit');	
 	}
 	function destroy(Produk $produk){

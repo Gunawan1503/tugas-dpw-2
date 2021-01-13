@@ -22,7 +22,7 @@ trait ProdukAttributes {
 	}
 
 	function handleEdit(){
-		$this->handleDelete();
+		$this->handleDelete(); 
 		$this->handleUploadFoto();
 	}
 

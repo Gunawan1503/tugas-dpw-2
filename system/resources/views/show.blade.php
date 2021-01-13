@@ -9,13 +9,18 @@
 						Detail Data Produk
 					</div>
 					<div class="card-body text-dark">
+						<div class="row mb-5">
+							<div class="col-5">
+								<img src="{{url("public", $produk->foto)}}" alt="" class="img-fluid">
+							</div>
+							<div class="col-7"></div>
+						</div>
 						<h3>{{$produk->nama}}</h3>
 						<hr>
 						<p>
 							{{$produk->harga}}  |
 							Stok : {{$produk->stok}} Unit  |
-							Berat : {{$produk->berat}} Kg  |
-							Seller : {{$produk->seller->username}}
+							Berat : {{$produk->berat}} g
 						</p>
 						<p>
 							{!! nl2br($produk->deskripsi) !!}
