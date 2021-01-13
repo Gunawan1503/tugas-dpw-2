@@ -55,3 +55,5 @@ Route::get('Logout', [AuthController::class, 'logout']);
 
 Route::get('Register', [AuthController::class, 'showRegister']);
 Route::post('Register', [AuthController::class, 'registerProcess']);
+
+Route::get('test-ajax', [HomeController::class, 'testAjax']);
