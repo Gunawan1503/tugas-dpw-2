@@ -13,15 +13,32 @@ class AuthController extends Controller
 	}
 
 	function loginProcess(){
-		if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
-			return redirect('Admin/Dashboard')->with('succes', 'Login berhasil');
+		// if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
+		// 	return redirect('Admin/Dashboard')->with('succes', 'Login berhasil');
+		// } else {
+		// 	return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password Anda');
+		// }
+
+		if(request('login_as') == 1){
+			if(Auth::guard('penjual')->attempt(['email' => request('email'), 'password' => request('password')])){
+				return redirect('Dashboard/Penjual')->with('succes', 'Login Berhasil');
+			} else {
+				return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password Anda');	
+			}
 		} else {
-			return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password Anda');
+			if(Auth::guard('pembeli')->attempt(['email' => request('email'), 'password' => request('password')])){
+				return redirect('Dashboard/Pembeli')->with('succes', 'Login Berhasil');
+			} else {
+				return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password Anda');	
+			}
 		}
+
 	}
 
 	function logout(){
 		Auth::logout();
+		Auth::guard('penjual')->logout();
+		Auth::guard('pembeli')->logout();
 		return redirect('Admin/Dashboard');
 	}
 

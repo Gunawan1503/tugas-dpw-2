@@ -55,6 +55,12 @@
 	 
 			<label class="text-title">Password</label>
 			<input type="password" name="password" class="form_login" placeholder="Password ..">
+
+			<select name="login_as" class="form-control mb-4 mt-3">
+				<option value="">Login Sebagai Siape Kau t?</option>
+				<option value="1">Penjual</option>
+				<option value="2">Pembeli</option>
+			</select>
 	 
 			<input type="submit" class="btn btn-outline-warning" value="LOGIN">
 			<br><br>

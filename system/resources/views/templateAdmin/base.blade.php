@@ -76,6 +76,10 @@
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">
                             @if(Auth::check())
                                 {{request()->user()->nama}}
+                            @elseif(Auth::guard('penjual')->check())
+                                {{Auth::guard('penjual')->user()->nama}} - Penjual
+                            @elseif(Auth::guard('pembeli')->check())
+                                {{Auth::guard('pembeli')->user()->nama}} - Pembeli
                             @else
                                 Silahkan Login
                             @endif
