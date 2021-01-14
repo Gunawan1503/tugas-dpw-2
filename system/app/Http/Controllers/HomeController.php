@@ -63,6 +63,10 @@ class HomeController extends Controller{
 	function testAjax(){
 		$data['list_provinsi'] = Provinsi::all();
 		return view('test-ajax', $data);
+	}
 
+	function pesan(){
+		$data['list_provinsi'] = Provinsi::all();
+		return view('pesan', $data);
 	}
 }

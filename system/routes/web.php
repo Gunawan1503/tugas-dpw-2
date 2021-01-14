@@ -24,6 +24,7 @@ Route::get('/', function () {
 
 Route::get('Home', [HomeController::class, 'index']);
 Route::get('Client/Produk/{produk}', [HomeController::class, 'show']);
+Route::get('Pesan', [HomeController::class, 'pesan']);
 Route::post('Produk/Filter', [HomeController::class, 'filter']);
 
 Route::prefix('Admin')->middleware('auth')->group(function(){

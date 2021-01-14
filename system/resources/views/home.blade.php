@@ -10,7 +10,10 @@
 				  	<div class="card-body">
 				   		<h5 class="card-title">{{$produk->nama}}</h5>
 				    	<p class="card-text">{{$produk->harga}}</p>
-				    	<a href="{{url('Client/Produk', $produk->id)}}" class="btn btn-primary">Detail</a>
+				    	<div class="btn-group">
+				    		<a href="{{url('Client/Produk', $produk->id)}}" class="btn btn-primary mr-2">Detail</a>
+				    		<a href="{{url('Pesan')}}" class="btn btn-warning">Pesan</a>
+				    	</div>
 				  	</div>
 				</div>
 			</div>
