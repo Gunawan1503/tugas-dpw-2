@@ -72,8 +72,12 @@
                                         class="text-dark">
                                             @if(Auth::check())
                                                 {{request()->user()->nama}}
+                                            @elseif(Auth::guard('penjual')->check())
+                                                {{Auth::guard('penjual')->user()->nama}}
+                                            @elseif(Auth::guard('pembeli')->check())
+                                                {{Auth::guard('pembeli')->user()->nama}}
                                             @else
-                                                Silahkan Login 
+                                                Silahkan Login
                                             @endif
                                         </span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
@@ -83,7 +87,7 @@
                                     <i data-feather="user" class="svg-icon mr-2 ml-1"></i>
                                     My Profile
                                 </a>
-                                <a class="dropdown-item" href="javascript:void(0)">
+                                <a class="dropdown-item" href="{{url('setting')}}">
                                     <i data-feather="settings" class="svg-icon mr-2 ml-1"></i>
                                     Setting
                                 </a>

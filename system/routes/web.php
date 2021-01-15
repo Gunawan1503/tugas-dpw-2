@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SettingController;
 
 
 /*
@@ -26,6 +27,8 @@ Route::get('Home', [HomeController::class, 'index']);
 Route::get('Client/Produk/{produk}', [HomeController::class, 'show']);
 Route::get('Pesan', [HomeController::class, 'pesan']);
 Route::post('Produk/Filter', [HomeController::class, 'filter']);
+
+Route::get('Dashboard/{status}', [HomeController::class, 'showDashboard']);
 
 Route::prefix('Admin')->middleware('auth')->group(function(){
 	Route::get('Dashboard', [HomeController::class, 'showDashboard']);
@@ -58,3 +61,7 @@ Route::get('Register', [AuthController::class, 'showRegister']);
 Route::post('Register', [AuthController::class, 'registerProcess']);
 
 Route::get('test-ajax', [HomeController::class, 'testAjax']);
+
+Route::get('setting', [SettingController::class, 'index']);
+Route::post('setting', [SettingController::class, 'store']);
+
