@@ -31,6 +31,10 @@ class UserController extends Controller{
 		return redirect('Admin/User')->with('success', 'Data Berhasil Ditambahkan');
 	}
 	function show(User $user){
+		$loggedUser = request()->user();
+
+		if($loggedUser->id != $user->id) return abort(403);
+
 		$data['user'] = $user;
 		return view('user.show', $data);
 	}
